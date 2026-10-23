@@ -1,0 +1,34 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "page",
+  "shape": "Map / Diagram",
+  "theme": "wayfind",
+  "axes": "light/mono/cool",
+  "hero": "Index",
+  "nav": "banner over a retracting bar",
+  "footer": "statement",
+  "imagery": "screenshots 4 (capture.mjs)",
+  "photos": [],
+  "entry": "site/index.html",
+  "fingerprint": "map-diagram/index/banner-bar/statement/pinned-line-rows-grid-statement-form",
+  "sections": [
+   "hero index (applications board)",
+   "pinned (four stops)",
+   "line diagram + switcher (coverage)",
+   "rows (gains)",
+   "grid (security)",
+   "statement (quote)",
+   "form (request access)",
+   "footer statement"
+  ],
+  "signature": "the metro line out of DXB, each stop a destination with its processing time",
+  "waived": [
+   "64",
+   "77"
+  ],
+  "prompt": "visa document automation platform for UAE travel agencies",
+  "date": "2026-10-23"
+ }
+]

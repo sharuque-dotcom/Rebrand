@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safr, the operating system for outbound visas</title>
+<meta name="description" content="Safr turns UAE expatriate paperwork into embassy-compliant visa dossiers in 90 seconds, powered by the Atlas consular rules engine.">
+<meta property="og:title" content="Safr, the operating system for outbound visas">
+<meta property="og:description" content="Embassy-ready visa packs in 90 seconds for UAE travel agencies and corporate travel desks.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/board.png">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body id="home">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="banner">
+  <div class="container banner__row">
+    <p role="status">Atlas engine: consular rules active 24/7</p>
+    <a href="#agencies">For travel agencies</a>
+  </div>
+</div>
+
+<header class="bar" data-bar>
+  <nav class="container bar__row" aria-label="Main">
+    <a class="wordmark" href="#home">Safr</a>
+    <ul class="bar__links">
+      <li><a href="#workflow">Workflow</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#security">Security</a></li>
+    </ul>
+    <div class="bar__actions">
+      <a class="bar__signin" href="https://safr-embassy-ready-travel.lovable.app/login">Agent sign in</a>
+      <a class="btn btn--primary btn--small" href="#access">Request access</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Hero: the applications board, as the agent sees it -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero__head">
+        <h1 id="hero-title">The operating system for outbound visas</h1>
+        <div class="hero__side">
+          <p class="lead">Client paperwork in, embassy‑ready visa packs out in 90 seconds.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#access">Request access</a>
+            <a class="btn btn--line" href="#workflow">See the route</a>
+          </div>
+        </div>
+      </div>
+      <figure class="frame hero__frame" data-slot="hero-board" data-kind="product" data-alt="The Safr workspace applications board with sample client files">
+        <img src="images/board.png" width="2400" height="1350" fetchpriority="high"
+             alt="Safr workspace: five sample visa applications for Schengen, the UK, Japan, Canada and the US, each with its checks passed and status">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Workflow: four stops, the product held beside them -->
+  <section class="route" id="workflow" aria-labelledby="route-title">
+    <div class="container">
+      <div class="route__head">
+        <h2 id="route-title">Inbox to embassy in four stops</h2>
+        <p class="lead">One client file, carried from the scan to the signed pack.</p>
+      </div>
+      <div class="route__body">
+        <div class="route__stage" aria-hidden="true">
+          <figure class="frame route__frame" data-kind="product">
+            <img src="images/documents.png" width="1253" height="1253" alt="" data-shot="1" class="is-on" loading="lazy">
+            <img src="images/checks.png" width="1252" height="1253" alt="" data-shot="2" loading="lazy">
+            <img src="images/pack.png" width="1252" height="1253" alt="" data-shot="3" loading="lazy">
+            <img src="images/board.png" width="2400" height="1350" alt="" data-shot="4" class="shot--board" loading="lazy">
+          </figure>
+        </div>
+        <ol class="stops">
+          <li class="stop" data-stop="1">
+            <div class="plate"><span class="plate__figure">3 sec</span><span>to read a passport</span></div>
+            <h3>Intake</h3>
+            <p>Passport MRZ and Emirates ID OCR in under 3 seconds. Mark each document as the client sends it.</p>
+            <img class="stop__shot" src="images/documents.png" width="1253" height="1253" loading="lazy" alt="The documents list for a sample client, with the bank statement still to arrive">
+          </li>
+          <li class="stop" data-stop="2">
+            <div class="plate"><span class="plate__figure">214</span><span>consular rules</span></div>
+            <h3>Atlas checks</h3>
+            <p>Atlas checks every destination rule before an officer does: expired NOCs, jurisdiction mismatches, photo dimensions.</p>
+            <img class="stop__shot" src="images/checks.png" width="1252" height="1253" loading="lazy" alt="Atlas checks for a UK application: seven of nine passed, the passport validity and bank statement flagged">
+          </li>
+          <li class="stop" data-stop="3">
+            <div class="plate"><span class="plate__figure">90 sec</span><span>to a dossier</span></div>
+            <h3>Dossier</h3>
+            <p>Embassy forms, cover letters and guarantee letters, filled from the client file.</p>
+            <img class="stop__shot" src="images/pack.png" width="1252" height="1253" loading="lazy" alt="A Schengen application form filled from a sample client file, ready to print">
+          </li>
+          <li class="stop" data-stop="4">
+            <h3>Print and sign</h3>
+            <p>Embassy‑ready physical packs, or e‑visa submission. Every file’s status stays on the board.</p>
+            <img class="stop__shot" src="images/board.png" width="2400" height="1350" loading="lazy" alt="The applications board showing each file as pack ready, checks passed, review needed or submitted">
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage: the line out of Dubai -->
+  <section class="band band--ink coverage" id="coverage" aria-labelledby="coverage-title">
+    <div class="container">
+      <div class="coverage__head">
+        <h2 id="coverage-title">Every line leaves from DXB</h2>
+        <p class="lead">180+ countries supported. 99.9% embassy compliance. Under 2 hours average processing.</p>
+      </div>
+
+      <div class="line" data-switch>
+        <div class="line__track" role="tablist" aria-label="Destinations from Dubai">
+          <span class="line__origin">DXB</span>
+          <button role="tab" id="t-sch" aria-controls="p-sch" aria-selected="true">Schengen<span class="line__days">10-15 d</span></button>
+          <button role="tab" id="t-uk" aria-controls="p-uk" aria-selected="false" tabindex="-1">UK<span class="line__days">15 wd</span></button>
+          <button role="tab" id="t-us" aria-controls="p-us" aria-selected="false" tabindex="-1">US<span class="line__days">30-90 d</span></button>
+          <button role="tab" id="t-ca" aria-controls="p-ca" aria-selected="false" tabindex="-1">Canada<span class="line__days">20-40 d</span></button>
+          <button role="tab" id="t-jp" aria-controls="p-jp" aria-selected="false" tabindex="-1">Japan<span class="line__days">5-7 wd</span></button>
+          <button role="tab" id="t-gcc" aria-controls="p-gcc" aria-selected="false" tabindex="-1">GCC<span class="line__days">1-3 d</span></button>
+          <button role="tab" id="t-au" aria-controls="p-au" aria-selected="false" tabindex="-1">Australia<span class="line__days">15-30 d</span></button>
+        </div>
+
+        <section class="board" role="tabpanel" id="p-sch" aria-labelledby="t-sch">
+          <div class="board__sign"><small>Europe, from Dubai</small><h3>Schengen Area</h3><p class="board__time">10 to 15 days</p></div>
+          <ul class="board__docs"><li>Passport (3+ months validity)</li><li>Emirates ID and residence visa</li><li>Employer NOC and salary certificate</li><li>6-month bank statement</li><li>Travel insurance, €30k</li><li>Hotel and flight reservations</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-uk" aria-labelledby="t-uk" hidden>
+          <div class="board__sign"><small>Europe, from Dubai</small><h3>United Kingdom</h3><p class="board__time">15 working days</p></div>
+          <ul class="board__docs"><li>Passport</li><li>Emirates ID</li><li>Employer letter</li><li>6-month bank statement</li><li>TB test, if applicable</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-us" aria-labelledby="t-us" hidden>
+          <div class="board__sign"><small>Americas, from Dubai</small><h3>United States</h3><p class="board__time">30 to 90 days, interview-based</p></div>
+          <ul class="board__docs"><li>DS-160 confirmation</li><li>Passport</li><li>Interview appointment</li><li>Employment proof</li><li>Financial evidence</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-ca" aria-labelledby="t-ca" hidden>
+          <div class="board__sign"><small>Americas, from Dubai</small><h3>Canada</h3><p class="board__time">20 to 40 days</p></div>
+          <ul class="board__docs"><li>IMM 5257 form</li><li>Passport</li><li>Biometrics</li><li>Financial proof</li><li>Purpose of travel letter</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-jp" aria-labelledby="t-jp" hidden>
+          <div class="board__sign"><small>Asia, from Dubai</small><h3>Japan</h3><p class="board__time">5 to 7 working days</p></div>
+          <ul class="board__docs"><li>Application form</li><li>Passport</li><li>Photo, 45×45 mm</li><li>Itinerary</li><li>Bank statement</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-gcc" aria-labelledby="t-gcc" hidden>
+          <div class="board__sign"><small>Middle East, from Dubai</small><h3>GCC (KSA, Oman, Qatar)</h3><p class="board__time">1 to 3 days, e-visa</p></div>
+          <ul class="board__docs"><li>Passport</li><li>Emirates ID</li><li>Residence visa</li><li>Photo</li></ul>
+        </section>
+        <section class="board" role="tabpanel" id="p-au" aria-labelledby="t-au" hidden>
+          <div class="board__sign"><small>Oceania, from Dubai</small><h3>Australia</h3><p class="board__time">15 to 30 days</p></div>
+          <ul class="board__docs"><li>ImmiAccount application</li><li>Passport</li><li>Financial proof</li><li>Employment letter</li></ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features: what the desk gets back -->
+  <section class="gains" id="features" aria-labelledby="gains-title">
+    <div class="container gains__grid">
+      <h2 id="gains-title">What the desk gets back</h2>
+      <dl class="rows">
+        <div class="row"><dt>Days become minutes</dt><dd>Automated form synthesis turns a two-day pack into a 90-second dossier.</dd></div>
+        <div class="row"><dt>Fewer rejections</dt><dd>Errors are caught at the desk, not at the embassy counter.</dd></div>
+        <div class="row"><dt>Live milestones</dt><dd>Biometrics booked, at VFS Dubai, embassy decision: every applicant, in real time.</dd></div>
+        <div class="row"><dt>One team, one bill</dt><dd>Multi-agent logins, applicant intake links and unified billing.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Security -->
+  <section class="band band--paper security" id="security" aria-labelledby="security-title">
+    <div class="container">
+      <h2 id="security-title">Client files stay in the UAE</h2>
+      <ul class="cells">
+        <li><h3>UAE PDPL and GDPR aligned</h3><p>Data residency in UAE regions, encrypted at rest and in transit.</p></li>
+        <li><h3>Role-based agency access</h3><p>Permissions per agent, branch and corporate client.</p></li>
+        <li><h3>Full audit trail</h3><p>Every document view and edit logged for consular accountability.</p></li>
+      </ul>
+      <ul class="marks" aria-label="Compliance">
+        <li>GDPR compliant</li><li>UAE PDPL</li><li>ISO 27001</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- A client, in their words -->
+  <section class="voice" aria-label="What a client says">
+    <div class="container">
+      <figure class="quote">
+        <blockquote><p>“Safr has completely transformed our visa operations. Schengen packs that took my team two days now leave the desk in minutes, and our rejection rate has dropped to almost zero.”</p></blockquote>
+        <figcaption><b>Ahmed Al Mansoori</b>Head of Operations, Emirates Travel Group</figcaption>
+      </figure>
+      <p class="voice__trust">Trusted by travel teams at Emirates, dnata, flydubai, Qatar Airways, Turkish Airlines and Air Canada.</p>
+    </div>
+  </section>
+
+  <!-- Close: request access -->
+  <section class="access" id="agencies" aria-labelledby="access-title">
+    <div class="container access__grid">
+      <div class="access__head">
+        <h2 id="access-title">Join 500+ UAE agencies on Safr</h2>
+        <p class="lead">For travel agencies and corporate travel desks.</p>
+      </div>
+      <form class="form" id="access" data-endpoint="" novalidate>
+        <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@agency.ae" required></div>
+        <div class="field"><label for="f-agency">Agency or company</label><input id="f-agency" name="agency" type="text" autocomplete="organization" placeholder="Gulf Horizons Travel" required></div>
+        <div class="field"><label for="f-volume">Monthly visa volume</label>
+          <select id="f-volume" name="volume"><option>Under 50</option><option>50 to 250</option><option>250 to 1,000</option><option>1,000+</option></select></div>
+        <div class="form__foot">
+          <button class="btn btn--primary" type="submit">Request access</button>
+          <p class="form__help" id="access-help" aria-live="polite">Preview only: requests are not sent yet.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__line">Every client file, checked before the embassy sees it.</p>
+    <nav class="foot__links" aria-label="Footer">
+      <a href="#home">Home</a><a href="#workflow">Workflow</a><a href="#coverage">Coverage</a><a href="#features">Features</a><a href="#security">Security</a><a href="https://safr-embassy-ready-travel.lovable.app/login">Agent sign in</a>
+    </nav>
+    <div class="foot__legal">
+      <p>© 2026 Safr Technologies FZ-LLC. All rights reserved.</p>
+      <p class="foot__small"><a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Contact</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Bar retracts on the way down, returns on the way up */
+(() => {
+  const bar = document.querySelector('[data-bar]'); let last = scrollY;
+  addEventListener('scroll', () => { const y = scrollY; bar.classList.toggle('is-away', y > last && y > 240); last = y; }, { passive: true });
+  bar.addEventListener('focusin', () => bar.classList.remove('is-away'));
+})();
+
+/* Pinned route: the frame shows the stop being read */
+(() => {
+  const shots = document.querySelectorAll('[data-shot]');
+  const io = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    const n = e.target.dataset.stop;
+    shots.forEach((s) => s.classList.toggle('is-on', s.dataset.shot === n));
+  }), { rootMargin: '-45% 0px -45% 0px' });
+  document.querySelectorAll('[data-stop]').forEach((el) => io.observe(el));
+})();
+
+/* Destination tabs: arrows move, the board updates in place */
+document.querySelectorAll('[data-switch]').forEach((root) => {
+  const tabs = [...root.querySelectorAll('[role=tab]')];
+  const pick = (t, focus) => {
+    tabs.forEach((x) => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+    if (focus) t.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => pick(t));
+    t.addEventListener('keydown', (e) => {
+      const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+      if (d) { e.preventDefault(); pick(tabs[(i + d + tabs.length) % tabs.length], true); }
+      if (e.key === 'Home') { e.preventDefault(); pick(tabs[0], true); }
+      if (e.key === 'End') { e.preventDefault(); pick(tabs[tabs.length - 1], true); }
+    });
+  });
+});
+
+/* Request access: posts nowhere until an endpoint is set */
+document.querySelectorAll('form[data-endpoint]').forEach((form) => {
+  const help = form.querySelector('[aria-live]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [...form.querySelectorAll('input')].find((i) => !i.checkValidity());
+    form.querySelectorAll('input').forEach((i) => i.toggleAttribute('aria-invalid', !i.checkValidity()));
+    if (bad) { bad.setAttribute('aria-describedby', help.id); help.textContent = bad.type === 'email' ? 'That email looks incomplete. Write it as name@agency.ae.' : 'Fill in ' + bad.labels[0].textContent.toLowerCase() + ' to continue.'; bad.focus(); return; }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: this form is not connected yet.'; return; }
+    const btn = form.querySelector('button'); btn.setAttribute('aria-busy', 'true');
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) })
+      .then((r) => { help.textContent = r.ok ? 'Request received for ' + form.email.value.trim() + '.' : 'That did not go through. Try again in a minute.'; })
+      .catch(() => { help.textContent = 'That did not go through. Try again in a minute.'; })
+      .finally(() => btn.removeAttribute('aria-busy'));
+  });
+});
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
